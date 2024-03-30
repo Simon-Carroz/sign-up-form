@@ -17,6 +17,23 @@
 
 
 
+.warning-message {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+
+
+
 /* left and right section positioning */
 .form-parent {
     display: flex;
@@ -200,4 +217,20 @@
 
 .form-submit-section > button:hover {
     box-shadow: 0px 0px 10px rgb(165, 220, 243);
+    background-color: #055a88;
+}
+
+
+/* removing arrows for phone number input */
+
+/* Chrome, Safari, Edge, Opera */
+#phone-number::-webkit-outer-spin-button,
+#phone-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#phone-number[type=number] {
+  -moz-appearance: textfield;
 }

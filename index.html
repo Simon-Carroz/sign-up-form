@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up</title>
 </head>
 <body>
 
+    <div class="warning-message" id="warn-msg">Passwords do not match!</div>
 
 
-    <div class="form-parent">
+
+<div class="form-parent">
         <!-- side image -->
         <section class="side-img-sect">
 
@@ -43,7 +43,7 @@
 
                     <br>
 
-                    <h2>What are you? Scared!?</h2>
+                    <h2>What are you? scared!?</h2>
                 </header>
 
                 <div class="form-actual">
@@ -79,14 +79,14 @@
                                 <div class="form-row">
 
                                     <label for="email">Email:</label>
-                                    <input type="email" id="email">
+                                    <input required type="email" id="email">
 
                                 </div>
 
                                 <div class="form-row">
 
                                     <label for="phone-number">Phone Number:</label>
-                                    <input type="text" id="phone-number">
+                                    <input required type="number" id="phone-number">
 
                                 </div>
 
@@ -98,14 +98,14 @@
                                 <div class="form-row">
 
                                     <label for="password">Password:</label>
-                                    <input type="password" id="password">
+                                    <input required type="password" id="password">
 
                                 </div>
 
 
                                 <div class="form-row">
                                     <label for="confirm-password">Confirm Password:</label>
-                                    <input type="password" id="confirm-password">
+                                    <input required type="password" id="confirm-password">
                                 </div>
 
                             </div>
@@ -116,7 +116,7 @@
 
                         <div class="form-submit-section">
 
-                            <button class="submit-btn" type="submit">Create Account</button>
+                            <button id="submit" class="submit-btn" type="submit">Create Account</button>
 
                             <p>Already have an account? <a href="#">Log in</a></p>
 
